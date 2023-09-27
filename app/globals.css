@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Fira Sans", sans-serif !important;
+}
+#dropdownDelayButton:hover #dropdownDelay {
+    display: block;
+}
+
+:root {
+    --color-pulse: rgba(8, 65, 131, 0.8);
+    --color-main-opacity: rgba(8, 65, 131, 0.8);
+    --color-main: #084183;
+    --color-hover: #eb681b;
+    --color-footer: #2c3238;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-main);
+}
+.banner .banner-img span.affles {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner .banner-img span.affles::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--color-main);
+    background-color: var(--color-pulse);
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 10px 2px var(--color-main);
+}
+
+.banner .banner-img span.affles::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-pulse);
+    border: 1px solid var(--color-main);
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    box-shadow: 0 0 10px 2px var(--color-main);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+.banner {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.012);
+}
+
+.business p.number,
+.web-app p.number,
+.aplication-crm p.number,
+.application-app p.number {
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 96px;
+    color: var(--color-hover);
+    letter-spacing: -0.02em;
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 91px;
+}
+.business p.number::before,
+.aplication-crm p.number::before,
+.web-app p.number::before,
+.application-app p.number::before {
+    content: "";
+    width: 90px;
+    height: 3px;
+    background-color: var(--color-hover);
+    left: 0;
+    bottom: 15px;
+    position: absolute;
+}
+.business {
+    background-image: url("../public/buss.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    /* background-size: 1200px 1400px; */
+}
+.aplication-crm {
+    background-image: url("../public/bg-dung-dung-2.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 743px 618px;
+}
+.application-app {
+    /* background-image: url("../public/apply.png");
+    background-repeat: no-repeat;
+    background-position: bottom right; */
+}
+
+.web-app {
+    background-image: linear-gradient(#8bc6ec, #9599e2);
+}
+.web-design__categorys {
+    background-image: linear-gradient(
+        rgba(128, 208, 199, 0.3),
+        rgba(142, 197, 252, 0.3)
+    );
+}
+
+.web-design__categorys .list .item {
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.web-design__categorys .list .item:hover {
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+.contact-ntechs__content {
+    background-image: linear-gradient(#8bc6ec, #9599e2);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .business {
+        background-image: none;
+    }
+
+    .banner .banner-img span.affles {
+        width: 300px;
+        height: 300px;
+    }
+    .business p.number,
+    .web-app p.number,
+    .aplication-crm p.number,
+    .application-app p.number {
+        font-size: 5em;
+        padding-left: 61px;
+    }
+    .business p.number::before,
+    .aplication-crm p.number::before,
+    .web-app p.number::before,
+    .application-app p.number::before {
+        content: "";
+        width: 60px;
+    }
+}
