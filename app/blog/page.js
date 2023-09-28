@@ -14,30 +14,20 @@ const base64Credentials = Buffer.from(`${username}:${password}`).toString(
 
 const page = () => {
     const [posts, setPosts] = useState([]);
-
     useEffect(() => {
-        const axiosInstance = axios.create({
-            baseURL: apiUrl,
-            headers: {
-                Authorization: `Basic ${base64Credentials}`,
-            },
-        });
-
-        axiosInstance
-            .get("/")
+        axios
+            .get("https://ntechs-api.vercel.app/")
             .then((response) => {
                 const post = response.data;
-                console.log("Danh sách bài viết:");
                 console.log(post);
-
                 setPosts(post);
             })
             .catch((error) => {
                 console.error("Lỗi khi gọi API:", error);
-                res.status(500).json({ error: "Lỗi khi lấy dữ liệu từ API." });
             });
     }, []);
     console.log(posts);
+
     return (
         <div>
             <BannerBlog />
