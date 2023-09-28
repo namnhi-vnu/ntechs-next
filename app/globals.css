@@ -188,3 +188,7 @@ body::-webkit-scrollbar-thumb {
         width: 60px;
     }
 }
+
+.banner-blog {
+    background: url("../public/bg-banner-blog.jpg") no-repeat 50%;
+}

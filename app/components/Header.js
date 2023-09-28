@@ -66,7 +66,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="/blog"
                                         className="flex items-center gap-2 text-white bg-[#EB681B] p-2 "
                                     >
                                         <span>
@@ -92,7 +92,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="menus grow max-md:flex max-md:items-center max-md:justify-end ">
-                            <span className="hidden max-md:block text-[1.7em] inline-block mr-3 mt-3 text-ntechs">
+                            <span className="hidden max-md:block text-[1.7em]  mr-3 mt-3 text-ntechs">
                                 <FaBarsStaggered />
                             </span>
                             <ul className="flex justify-end gap-x-10 items-center relative max-md:hidden">
@@ -110,7 +110,7 @@ const Header = () => {
                                     </span>
                                     <div
                                         id="dropdownDelay"
-                                        className="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow shadow-gray-500 w-44 dark:bg-gray-700 absolute top-full w-max min-w-menu -left-8"
+                                        className="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow shadow-gray-500 min-w-44 dark:bg-gray-700 absolute top-full w-max min-w-menu -left-8"
                                     >
                                         <ul
                                             className="py-2 text-sm text-gray-700 dark:text-gray-200 grid grid-cols-2 p-2 gap-3"
@@ -119,7 +119,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -132,7 +132,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -145,7 +145,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -158,7 +158,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -171,7 +171,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -184,7 +184,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -197,7 +197,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -210,7 +210,7 @@ const Header = () => {
                                             <li className="my-1">
                                                 <Link
                                                     href="#"
-                                                    className="block px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
+                                                    className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
                                                     <img
                                                         className="w-9"
@@ -238,7 +238,7 @@ const Header = () => {
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
                                     Liên Hệ
                                 </li>
-                                <li className="bg-[#084183] text-white py-2 px-3 rounded-md py-2">
+                                <li className="bg-[#084183] text-white py-2 px-3 rounded-md ">
                                     <Link href="#">Đăng Ký</Link>
                                 </li>
                             </ul>
