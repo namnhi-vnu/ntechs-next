@@ -14,19 +14,6 @@ const base64Credentials = Buffer.from(`${username}:${password}`).toString(
 
 const page = () => {
     const [posts, setPosts] = useState([]);
-    // useEffect(() => {
-    //     axios
-    //         .get("http://localhost:5000/get-posts")
-    //         .then((response) => {
-    //             const post = response.data;
-    //             console.log(post);
-    //             setPosts(post);
-    //         })
-    //         .catch((error) => {
-    //             console.error("Lỗi khi gọi API:", error);
-    //         });
-    // }, []);
-    // console.log(posts);
 
     useEffect(() => {
         const axiosInstance = axios.create({
@@ -43,7 +30,6 @@ const page = () => {
                 console.log("Danh sách bài viết:");
                 console.log(post);
 
-                // Trả về dữ liệu cho client dưới dạng JSON
                 setPosts(post);
             })
             .catch((error) => {
@@ -54,8 +40,6 @@ const page = () => {
     console.log(posts);
     return (
         <div>
-            {/* Blog
-            <button onClick={() => router.push("/blog/post")}>Chuyển</button> */}
             <BannerBlog />
             <div className="title">
                 <h2>Blogs</h2>
