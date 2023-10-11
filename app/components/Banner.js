@@ -17,6 +17,19 @@ const BannerHome = () => {
         AOS.init();
     }, []);
 
+    const typing = [
+        "Thương mại điện tử",
+        2000,
+        "Giải pháp Mobile APP",
+        2000,
+        "Hệ thống ERP",
+        2000,
+        "Hệ thống Affiliate Marketing",
+        2000,
+        "Số 1 Việt Nam",
+        2000,
+    ];
+
     return (
         <>
             <div className="banner py-5">
@@ -32,7 +45,10 @@ const BannerHome = () => {
                                 Giải pháp Lập trình <br /> Web, APP Mobile, ERP
                                 ...
                             </h2>
-                            <TypingEffect />
+                            <TypingEffect
+                                typing={typing}
+                                style="text-5ml font-bold text-hover leading-13 sm:text-md  max-md:text-[1.6em] max-md:leading-[1.5em]"
+                            />
                             <div className="desc mt-5">
                                 <p className="text-[#858a8f] text-[1.2em]">
                                     Gia tăng nhận diện, Gắn kết khách hàng, Tăng

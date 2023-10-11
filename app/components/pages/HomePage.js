@@ -2,6 +2,7 @@ import Button from "../button/Button";
 import BannerHome, { buttonsOutline, buttonFit } from "../Banner";
 import { FaArrowRightLong, FaPhone, FaRegEnvelope } from "react-icons/fa6";
 import Link from "next/link";
+import Contacts from "../Contacts";
 const HomePage = () => {
     return (
         <>
@@ -35,7 +36,7 @@ const HomePage = () => {
                                         </span>
                                     </p>
                                     <h2 className="text-4xl font-bold text-[#333] leading-12 max-md:text-[1.755em]">
-                                        Ứng dụng bán hàng thương mại{" "}
+                                        Ứng dụng bán hàng thương mại
                                         <br className="max-md:hidden" /> điện tử
                                     </h2>
                                     <p
@@ -569,32 +570,32 @@ const HomePage = () => {
                         </div>
                         <div className="list py-[2em]">
                             <div className="grid grid-cols-5 2xl:grid-cols-6 gap-5 max-md:grid-cols-2 max-md:gap-3">
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./page-pana.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Bán hàng
                                             </h2>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./shop-rafiki.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Thời
                                                 trang
@@ -602,16 +603,16 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./booking-rafiki.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Khách
                                                 sạn
@@ -619,16 +620,16 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./company-amico.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Doanh
                                                 nghiệp
@@ -636,48 +637,48 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./seminar-bro.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Giáo dục
                                             </h2>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./shelter-cuate.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Thú cưng
                                             </h2>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./sale-pana.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Bất động
                                                 sản
@@ -685,32 +686,32 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./research-amico.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Y tế
                                             </h2>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <Link href="/">
-                                        <div class="img">
+                                        <div className="img">
                                             <img
                                                 src="./globalization-cuate.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
                                         </div>
-                                        <div class="desc">
+                                        <div className="desc">
                                             <h2 className="text-[1.1em] text-center max-md:text-[1em]">
                                                 NTechs Thiết kế website Du lịch
                                             </h2>
@@ -721,10 +722,10 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div class="why-choose py-[2em]">
-                    <div class="container mx-auto max-md:px-[1em]">
+                <div className="why-choose py-[2em]">
+                    <div className="container mx-auto max-md:px-[1em]">
                         <div
-                            class="text-center aos-init aos-animate"
+                            className="text-center aos-init aos-animate"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                         >
@@ -736,25 +737,25 @@ const HomePage = () => {
                                 <br className="max-md:hidden" /> doanh nghiệp
                             </h2>
                         </div>
-                        <div class="why-choose__content mt-10">
+                        <div className="why-choose__content mt-10">
                             <div
-                                class="why-choose__list aos-init aos-animate grid grid-cols-3 gap-5 max-md:grid-cols-1 max-md:gap-3"
+                                className="why-choose__list aos-init aos-animate grid grid-cols-3 gap-5 max-md:grid-cols-1 max-md:gap-3"
                                 data-aos="fade-up"
                                 data-aos-duration="1000"
                             >
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-right"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-4.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             Giải pháp thông minh
                                         </h2>
@@ -766,18 +767,18 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-right"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-1-1.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             Tối ưu chi phí
                                         </h2>
@@ -789,18 +790,18 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-2-1.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             Đồng hành công nghệ
                                         </h2>
@@ -812,18 +813,18 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-right"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-5.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             Đổi mới &amp; Sáng tạo
                                         </h2>
@@ -835,18 +836,18 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-4-1.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             Kinh nghiệm &amp; kỹ năng
                                         </h2>
@@ -858,18 +859,18 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div
-                                    class="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
+                                    className="why-choose__item p-5 flex gap-5 aos-init aos-animate max-md:p-2"
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >
-                                    <div class="box-img">
+                                    <div className="box-img">
                                         <img
                                             className="min-w-[50px] inline-block"
                                             src="./Icon-3-1.png"
                                             alt=""
                                         />
                                     </div>
-                                    <div class="box-text">
+                                    <div className="box-text">
                                         <h2 className="text-[1.375em] font-semibold">
                                             98.99% satisfaction
                                         </h2>
@@ -884,57 +885,11 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div class="contact-ntechs py-10">
-                    <div class="container mx-auto  max-md:px-[1em]">
-                        <div class="contact-ntechs__content">
-                            <div class="contact-ntechs__boxs">
-                                <div class="contact-ntechs-item flex items-center relative max-md:block">
-                                    <div
-                                        class="box-text aos-init aos-animate py-[2em] px-[2.5em] max-md:px-[1em] max-md:py-[1em]"
-                                        data-aos="fade-right"
-                                        data-aos-duration="1000"
-                                    >
-                                        <h2 className="text-[2em] text-white font-semibold pt-10 max-md:text-[1.6em]">
-                                            Bạn đang muốn triển khai một ứng
-                                            dụng, app mobile?{" "}
-                                            <br className="max-md:hidden" /> Gọi
-                                            ngay cho NTechs
-                                        </h2>
-                                        <div class="btn pt-10 mt-10 flex gap-5 max-md:mt-0 max-md:pb-5">
-                                            <Link href="tel:0969464154">
-                                                <Button buttons={buttonFit}>
-                                                    <span>
-                                                        <FaPhone />
-                                                    </span>
-                                                    0969.464.154
-                                                </Button>
-                                            </Link>
-                                            <Button buttons={buttonsOutline}>
-                                                Đăng ký tư vấn{" "}
-                                                <FaArrowRightLong />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="box-img aos-init aos-animate absolute right-[5%] 2xl:right-[10%] bottom-0 max-md:relative"
-                                        data-aos="fade-up"
-                                        data-aos-duration="1000"
-                                    >
-                                        <img
-                                            src="https://ntechs.vn/wp-content/themes/ntechs/images/Frame-698.png"
-                                            className="w-full"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="specific-number pb-10">
-                    <div class="container mx-auto max-md:px-[1em]">
+                <Contacts />
+                <div className="specific-number pb-10">
+                    <div className="container mx-auto max-md:px-[1em]">
                         <div
-                            class="specific-number__title aos-init aos-animate text-center"
+                            className="specific-number__title aos-init aos-animate text-center"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                         >
@@ -943,24 +898,26 @@ const HomePage = () => {
                             </h2>
                         </div>
                         <div
-                            class="specific-number__content aos-init aos-animate border-t-8 border-double border-ntechs rounded-md shadow-xl"
+                            className="specific-number__content aos-init aos-animate border-t-8 border-double border-ntechs rounded-md shadow-xl"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                         >
-                            <div class="specific-number__list grid grid-cols-4 max-md:grid-cols-2">
-                                <div class="specific-number__item border-r-[1px] max-md:border-b-[1px]  p-[2.5em] max-md:px-[1em] text-center">
+                            <div className="specific-number__list grid grid-cols-4 max-md:grid-cols-2">
+                                <div className="specific-number__item border-r-[1px] max-md:border-b-[1px]  p-[2.5em] max-md:px-[1em] text-center">
                                     <img
                                         src="https://ntechs.vn/wp-content/themes/ntechs/images/medal-star.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
                                         alt=""
                                     />
                                     <h2 className="text-[2.2em] leading-[2em] font-semibold">
-                                        <span class="year-of-operation">3</span>
+                                        <span className="year-of-operation">
+                                            3
+                                        </span>
                                         +
                                     </h2>
                                     <p>Năm hoạt động</p>
                                 </div>
-                                <div class="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
+                                <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
                                     <img
                                         src="https://ntechs.vn/wp-content/themes/ntechs/images/Badge-3.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
@@ -971,7 +928,7 @@ const HomePage = () => {
                                     </h2>
                                     <p>Doanh nghiệp đồng hành</p>
                                 </div>
-                                <div class="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
+                                <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
                                     <img
                                         src="https://ntechs.vn/wp-content/themes/ntechs/images/Icon_Transparency.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
@@ -982,7 +939,7 @@ const HomePage = () => {
                                     </h2>
                                     <p>Dự án đã thực hiện</p>
                                 </div>
-                                <div class="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
+                                <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
                                     <img
                                         src="https://ntechs.vn/wp-content/themes/ntechs/images/Badge.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
@@ -992,8 +949,8 @@ const HomePage = () => {
                                         897+
                                     </h2>
                                     <p>
-                                        Đánh giá 5{" "}
-                                        <i class="fa-solid fa-star"></i>
+                                        Đánh giá 5
+                                        <i className="fa-solid fa-star"></i>
                                     </p>
                                 </div>
                             </div>
