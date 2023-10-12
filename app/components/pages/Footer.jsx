@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
     FaFacebook,
@@ -6,14 +7,17 @@ import {
     FaRegEnvelope,
     FaYoutube,
 } from "react-icons/fa6";
+import Modals from "../Modals";
+import { useContext } from "react";
+import { ModalContext } from "../../contexts/ModalContext";
 
 const Footer = () => {
     const year = new Date().getFullYear();
-
+    const { showModal } = useContext(ModalContext);
     return (
         <>
             <footer className="bg-[#0C0129] ">
-                <img src="./canvaleft.png" alt="" className="canvas-right" />
+                <img src="./canvaleft.png" alt="" className="canvas-right " />
                 <img src="./canvaright.png" alt="" className="canvas-left" />
                 <div className="container mx-auto pt-[3em] pb-[4em] max-md:px-[1em]">
                     <div className="contents">
@@ -201,6 +205,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            {showModal && <Modals />}
         </>
     );
 };

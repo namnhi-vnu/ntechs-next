@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
-import Aos from "aos";
-
+import { usePathname } from "next/navigation";
+import { useContext, useEffect } from "react";
 import {
     FaAngleDown,
     FaBarsStaggered,
@@ -12,7 +11,17 @@ import {
     FaRegEnvelope,
     FaYoutube,
 } from "react-icons/fa6";
+import { ModalContext } from "../contexts/ModalContext";
 const Header = () => {
+    const router = usePathname();
+    // const isActive = (path) => (router.pathname === path ? "active" : "");
+    // useEffect(() => {
+    //     isActive();
+    // }, [router.pathname]);
+    // console.log(router.pathname);
+
+    const { handlerShowModal } = useContext(ModalContext);
+
     return (
         <>
             <header className="header font-fira">
@@ -97,17 +106,30 @@ const Header = () => {
                             </span>
                             <ul className="flex justify-end gap-x-10 items-center relative max-md:hidden">
                                 <li
-                                    className="text-[#084183] font-semibold hover:text-hover relative py-2 flex items-center gap-1 cursor-pointer"
+                                    className={` ${
+                                        router === "#"
+                                            ? "bg-hover  hover:text-white text-white  "
+                                            : ""
+                                    }text-[#084183] font-semibold hover:text-hover relative hover:bg-red-100 rounded-lg`}
                                     id="dropdownDelayButton"
                                     data-dropdown-toggle="dropdownDelay"
                                     data-dropdown-delay="200"
                                     data-dropdown-trigger="hover"
                                     type="button"
                                 >
-                                    Dịch Vụ
-                                    <span className="mt-1">
-                                        <FaAngleDown />
-                                    </span>
+                                    <Link
+                                        href="#"
+                                        className={`${
+                                            router === "#"
+                                                ? "bg-hover  hover:text-white text-white  "
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Dịch Vụ
+                                        <span className="mt-1">
+                                            <FaAngleDown />
+                                        </span>
+                                    </Link>
                                     <div
                                         id="dropdownDelay"
                                         className="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow shadow-gray-500 min-w-44 dark:bg-gray-700 absolute top-full w-max min-w-menu -left-8"
@@ -224,21 +246,69 @@ const Header = () => {
                                     </div>
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
-                                    <Link href="/giai-phap">Giải Pháp</Link>
+                                    <Link
+                                        href="/giai-phap"
+                                        className={`${
+                                            router === "/giai-phap"
+                                                ? "bg-hover  hover:text-white text-white hover:bg-hover"
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Giải Pháp
+                                    </Link>
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
-                                    Ứng Dụng
+                                    <Link
+                                        href="#"
+                                        className={`${
+                                            router === "#"
+                                                ? "bg-hover  hover:text-white text-white hover:bg-hover "
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Ứng Dụng
+                                    </Link>
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
-                                    Báo giá
+                                    <Link
+                                        href="#"
+                                        className={`${
+                                            router === "#"
+                                                ? "bg-hover  hover:text-white text-white hover:bg-hover "
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Báo giá
+                                    </Link>
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
-                                    <Link href="/gioi-thieu">Về NTechs</Link>
+                                    <Link
+                                        href="/gioi-thieu"
+                                        className={`${
+                                            router === "/gioi-thieu"
+                                                ? "bg-hover  hover:text-white text-white hover:bg-hover "
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Về NTechs
+                                    </Link>
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
-                                    Liên Hệ
+                                    <Link
+                                        href="#"
+                                        className={`${
+                                            router === "#"
+                                                ? "bg-hover  hover:text-white text-white hover:bg-hover "
+                                                : "hover:bg-red-100"
+                                        } p-2 rounded-lg flex items-center gap-1 `}
+                                    >
+                                        Liên Hệ
+                                    </Link>
                                 </li>
-                                <li className="bg-[#084183] text-white py-2 px-3 rounded-md ">
+                                <li
+                                    onClick={() => handlerShowModal()}
+                                    className="bg-[#084183] cursor-pointer text-white py-2 px-3 rounded-md "
+                                >
                                     <Link href="#">Đăng Ký</Link>
                                 </li>
                             </ul>

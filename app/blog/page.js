@@ -21,17 +21,17 @@ const page = () => {
     console.log(posts);
 
     return (
-        <div>
+        <div className="blogs">
             <BannerBlog />
-            <div className="title">
-                <h2>Blogs</h2>
+            <div className="title min-h-[20vh] flex items-center justify-center">
+                <h2 className="text-center text-lg">Comming Soon</h2>
             </div>
             <div className="list">
-                {posts.map((post) => (
+                {/* {posts.map((post) => (
                     <div className="item" key={post.id}>
                         <h2>{post.title.rendered}</h2>
                     </div>
-                ))}
+                ))} */}
             </div>
         </div>
     );

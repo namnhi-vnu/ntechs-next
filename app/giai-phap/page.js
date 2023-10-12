@@ -8,6 +8,7 @@ import TypingEffect from "../components/TypingEffect";
 import Button from "../components/button/Button";
 import { buttonsOutline, buttonFit } from "../components/Banner";
 import Contacts from "../components/Contacts";
+import Link from "next/link";
 const page = () => {
     const typing = [
         "Giải Pháp Thông Minh Của NTechs",
@@ -23,7 +24,7 @@ const page = () => {
                         <h2 className="max-md:min-h-[72px]">
                             <TypingEffect
                                 typing={typing}
-                                style="text-center text-[2.5em] max-md:text-[1.5em] font-semibold text-ntechs"
+                                style="text-center text-[2.5em] max-md:text-[1.5em] font-bold text-ntechs"
                             />
                         </h2>
                         <div className="w-3/6 max-md:w-full mx-auto text-center">
@@ -38,9 +39,14 @@ const page = () => {
                                 chuyển đổi số doanh nghiệp
                             </p>
                             <div className="btn flex justify-center gap-3 pt-5 ">
-                                <Button buttons={buttonsOutline}>
-                                    Gọi ngay <FaPhone />
-                                </Button>
+                                <Link href="tel:+84969464154">
+                                    <Button buttons={buttonsOutline}>
+                                        Gọi ngay
+                                        <span>
+                                            <FaPhone />
+                                        </span>
+                                    </Button>
+                                </Link>
                                 <Button buttons={buttonFit}>
                                     Tư vấn miễn phí <FaTelegram />
                                 </Button>
@@ -48,7 +54,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="service bg-white my-[5em] py-10 relative">
+                <div className="service bg-white  py-10 relative">
                     <img src="./canvaleft.png" alt="" className="left" />
                     <img src="./canvaright.png" alt="" className="right" />
 
@@ -320,7 +326,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="specific-number py-10">
                     <Contacts />
                 </div>
             </div>

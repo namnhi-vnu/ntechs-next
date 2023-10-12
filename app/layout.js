@@ -1,9 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/pages/Footer";
+import { ModalProvider } from "./contexts/ModalContext";
 import "./globals.css";
-// import { Inter } from "next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
     title: "NTechs - Thiết kế và phát triển Web App, Mobile App Đa nền tảng",
@@ -30,9 +28,11 @@ export default function RootLayout({ children }) {
             </head>
             <body>
                 <div className="app overflow-hidden">
-                    <Header />
-                    {children}
-                    <Footer />
+                    <ModalProvider>
+                        <Header />
+                        {children}
+                        <Footer />
+                    </ModalProvider>
                 </div>
             </body>
         </html>
