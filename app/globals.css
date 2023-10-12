@@ -318,7 +318,10 @@ modal
     left: 50%;
     transform: translate(-50%, -30%);
 }
-.modals-main::after {
+body.active {
+    position: relative;
+}
+body.active::after {
     content: "";
     position: absolute;
     width: 100%;

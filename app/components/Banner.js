@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import AOS from "aos";
 import TypingEffect from "./TypingEffect";
 import Button from "./button/Button";
 import { FaPhone, FaTelegram } from "react-icons/fa6";
 import Link from "next/link";
+import { ModalContext } from "../contexts/ModalContext";
 const buttonsOutline = {
     border: "border-2 border-ntechs py-1 px-3 rounded-md flex items-center gap-2 text-ntechs transition transition-all cursor-pointer hover:bg-ntechs hover:text-white ",
 };
@@ -13,6 +14,7 @@ const buttonFit = {
     border: "border-2 border-ntechs py-1 px-3 rounded-md flex items-center gap-2 text-white bg-ntechs transition-all  cursor-pointer hover:bg-white hover:text-ntechs",
 };
 const BannerHome = () => {
+    const { handlerShowModal } = useContext(ModalContext);
     useEffect(() => {
         AOS.init();
     }, []);
@@ -65,7 +67,12 @@ const BannerHome = () => {
                                             </span>
                                         </Button>
                                     </Link>
-                                    <Button buttons={buttonFit}>
+                                    <Button
+                                        buttons={buttonFit}
+                                        handlerShowModal={() =>
+                                            handlerShowModal()
+                                        }
+                                    >
                                         Tư vấn miễn phí
                                         <span>
                                             <FaTelegram />

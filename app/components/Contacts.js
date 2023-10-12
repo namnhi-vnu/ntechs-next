@@ -2,8 +2,11 @@ import Link from "next/link";
 import Button from "./button/Button";
 import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
 import { buttonFit, buttonsOutline } from "./Banner";
+import { useContext } from "react";
+import { ModalContext } from "../contexts/ModalContext";
 
 const Contacts = () => {
+    const { handlerShowModal } = useContext(ModalContext);
     return (
         <div className="contact-ntechs py-10 max-md:pb-[5em] max-xl:pb-[5em]">
             <div className="container mx-auto  max-md:px-[1em]">
@@ -29,7 +32,10 @@ const Contacts = () => {
                                             0969.464.154
                                         </Button>
                                     </Link>
-                                    <Button buttons={buttonsOutline}>
+                                    <Button
+                                        buttons={buttonsOutline}
+                                        handlerShowModal={handlerShowModal}
+                                    >
                                         Đăng ký tư vấn <FaArrowRightLong />
                                     </Button>
                                 </div>

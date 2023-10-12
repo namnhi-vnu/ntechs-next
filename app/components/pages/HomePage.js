@@ -1,9 +1,13 @@
+"use client";
 import Button from "../button/Button";
 import BannerHome, { buttonsOutline, buttonFit } from "../Banner";
 import { FaArrowRightLong, FaPhone, FaRegEnvelope } from "react-icons/fa6";
 import Link from "next/link";
 import Contacts from "../Contacts";
+import { useContext } from "react";
+import { ModalContext } from "@/app/contexts/ModalContext";
 const HomePage = () => {
+    const { handlerShowModal } = useContext(ModalContext);
     return (
         <>
             <BannerHome />
@@ -132,7 +136,12 @@ const HomePage = () => {
                                             <Button buttons={buttonFit}>
                                                 Đăng ký tư vấn <FaRegEnvelope />
                                             </Button>
-                                            <Button buttons={buttonsOutline}>
+                                            <Button
+                                                buttons={buttonsOutline}
+                                                handlerShowModal={() =>
+                                                    handlerShowModal()
+                                                }
+                                            >
                                                 Chi tiêt <FaArrowRightLong />
                                             </Button>
                                         </div>
@@ -247,10 +256,16 @@ const HomePage = () => {
                                         data-aos="fade-right"
                                         data-aos-duration="1000"
                                     >
-                                        <Button buttons={buttonFit}>
+                                        <Button
+                                            buttons={buttonFit}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
-                                        <Button buttons={buttonsOutline}>
+                                        <Button
+                                            buttons={buttonsOutline}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>
                                     </div>
@@ -417,10 +432,16 @@ const HomePage = () => {
                                         data-aos="fade-left"
                                         data-aos-duration="1000"
                                     >
-                                        <Button buttons={buttonFit}>
+                                        <Button
+                                            buttons={buttonFit}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
-                                        <Button buttons={buttonsOutline}>
+                                        <Button
+                                            buttons={buttonsOutline}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>
                                     </div>
@@ -533,10 +554,16 @@ const HomePage = () => {
                                         data-aos="fade-right"
                                         data-aos-duration="1000"
                                     >
-                                        <Button buttons={buttonFit}>
+                                        <Button
+                                            buttons={buttonFit}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
-                                        <Button buttons={buttonsOutline}>
+                                        <Button
+                                            buttons={buttonsOutline}
+                                            handlerShowModal={handlerShowModal}
+                                        >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>
                                     </div>
