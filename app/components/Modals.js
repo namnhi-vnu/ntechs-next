@@ -1,7 +1,6 @@
 "use client";
 import { BiX } from "react-icons/bi";
-import { buttonFit } from "./Banner";
-import Button from "./button/Button";
+
 import { useContext } from "react";
 import { ModalContext } from "../contexts/ModalContext";
 

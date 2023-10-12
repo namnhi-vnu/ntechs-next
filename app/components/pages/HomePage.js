@@ -1,11 +1,11 @@
 "use client";
+import { useContext } from "react";
+import Link from "next/link";
 import Button from "../button/Button";
 import BannerHome, { buttonsOutline, buttonFit } from "../Banner";
 import { FaArrowRightLong, FaPhone, FaRegEnvelope } from "react-icons/fa6";
-import Link from "next/link";
 import Contacts from "../Contacts";
-import { useContext } from "react";
-import { ModalContext } from "@/app/contexts/ModalContext";
+import { ModalContext } from "../../contexts/ModalContext";
 const HomePage = () => {
     const { handlerShowModal } = useContext(ModalContext);
     return (

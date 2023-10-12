@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import {
     FaAngleDown,
     FaBarsStaggered,

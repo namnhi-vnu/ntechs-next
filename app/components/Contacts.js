@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Button from "./button/Button";
-import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
-import { buttonFit, buttonsOutline } from "./Banner";
 import { useContext } from "react";
+import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
+import Button from "./button/Button";
+import { buttonFit, buttonsOutline } from "./Banner";
 import { ModalContext } from "../contexts/ModalContext";
 
 const Contacts = () => {

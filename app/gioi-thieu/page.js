@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import Modals from "../components/Modals";
+
 import { ModalContext } from "../contexts/ModalContext";
 
 const About = () => {
