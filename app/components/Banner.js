@@ -15,7 +15,7 @@ const buttonFit = {
     border: "border-2 border-ntechs py-1 px-3 rounded-md flex items-center gap-2 text-white bg-ntechs transition-all  cursor-pointer hover:bg-white hover:text-ntechs",
 };
 const BannerHome = () => {
-    const [dispatch] = useStore();
+    const [state, dispatch] = useStore();
     useEffect(() => {
         AOS.init();
     }, []);

@@ -1,13 +1,13 @@
 "use client";
 
-import { setSendModal } from "../../store/reducer/action";
+import { setShowModal } from "../../store/reducer/action";
 
 const Button = ({ children, buttons, dispatch }) => {
+    const handlerShow = () => {
+        dispatch(setShowModal());
+    };
     return (
-        <div
-            className={buttons?.border}
-            onClick={() => dispatch(setSendModal())}
-        >
+        <div className={buttons?.border} onClick={handlerShow}>
             {children}
         </div>
     );

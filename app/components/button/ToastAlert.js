@@ -9,7 +9,7 @@ const ToastAlert = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             dispatch(setCloseAlert());
-        }, 6000);
+        }, 5000);
         return () => {
             clearInterval(intervalId);
         };

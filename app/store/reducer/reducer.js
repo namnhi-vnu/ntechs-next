@@ -46,7 +46,7 @@ const reducer = (state, action) => {
                 ...state,
                 showModal: !state.showModal,
                 hidenBody: !state.showModal,
-                showAlertModal: !state.showAlertModal,
+                showAlertModal: false,
             };
         case ALERT_MODAL:
             return {

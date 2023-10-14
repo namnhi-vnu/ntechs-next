@@ -339,7 +339,7 @@ body.active::after {
 div #toast-top-right {
     right: 1%;
     animation-name: showalert;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 @keyframes showalert {
@@ -355,7 +355,7 @@ div #toast-top-right {
     width: 0;
     animation-name: identifier;
     animation-duration: 3s;
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 
 @keyframes identifier {
