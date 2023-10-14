@@ -8,12 +8,13 @@ import {
     FaYoutube,
 } from "react-icons/fa6";
 import Modals from "../Modals";
-import { useContext } from "react";
-import { ModalContext } from "../../contexts/ModalContext";
+import { useStore } from "../../store/hooks/useStore";
 
 const Footer = () => {
+    const [state] = useStore();
     const year = new Date().getFullYear();
-    const { showModal } = useContext(ModalContext);
+    const { showModal } = state;
+
     return (
         <>
             <footer className="bg-[#0C0129] ">

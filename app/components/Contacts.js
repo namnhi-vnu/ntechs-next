@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useContext } from "react";
 import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
 import Button from "./button/Button";
 import { buttonFit, buttonsOutline } from "./Banner";
-import { ModalContext } from "../contexts/ModalContext";
+import { useStore } from "../store/hooks/useStore";
 
 const Contacts = () => {
-    const { handlerShowModal } = useContext(ModalContext);
+    const [state, dispatch] = useStore();
     return (
         <div className="contact-ntechs py-10 max-md:pb-[5em] max-xl:pb-[5em]">
             <div className="container mx-auto  max-md:px-[1em]">
@@ -35,7 +34,7 @@ const Contacts = () => {
                                     </Link>
                                     <Button
                                         buttons={buttonsOutline}
-                                        handlerShowModal={handlerShowModal}
+                                        dispatch={dispatch}
                                     >
                                         Đăng ký tư vấn <FaArrowRightLong />
                                     </Button>

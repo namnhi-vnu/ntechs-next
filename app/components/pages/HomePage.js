@@ -1,13 +1,15 @@
 "use client";
-import { useContext } from "react";
+
 import Link from "next/link";
 import Button from "../button/Button";
 import BannerHome, { buttonsOutline, buttonFit } from "../Banner";
 import { FaArrowRightLong, FaPhone, FaRegEnvelope } from "react-icons/fa6";
 import Contacts from "../Contacts";
-import { ModalContext } from "../../contexts/ModalContext";
+import { useStore } from "../../store/hooks/useStore";
+
 const HomePage = () => {
-    const { handlerShowModal } = useContext(ModalContext);
+    const [state, dispatch] = useStore();
+
     return (
         <>
             <BannerHome />
@@ -133,14 +135,15 @@ const HomePage = () => {
                                             data-aos="fade-up"
                                             data-aos-duration="1000"
                                         >
-                                            <Button buttons={buttonFit}>
+                                            <Button
+                                                buttons={buttonFit}
+                                                dispatch={dispatch}
+                                            >
                                                 Đăng ký tư vấn <FaRegEnvelope />
                                             </Button>
                                             <Button
                                                 buttons={buttonsOutline}
-                                                handlerShowModal={() =>
-                                                    handlerShowModal()
-                                                }
+                                                dispatch={dispatch}
                                             >
                                                 Chi tiêt <FaArrowRightLong />
                                             </Button>
@@ -258,13 +261,13 @@ const HomePage = () => {
                                     >
                                         <Button
                                             buttons={buttonFit}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
                                         <Button
                                             buttons={buttonsOutline}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>
@@ -434,13 +437,13 @@ const HomePage = () => {
                                     >
                                         <Button
                                             buttons={buttonFit}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
                                         <Button
                                             buttons={buttonsOutline}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>
@@ -556,13 +559,13 @@ const HomePage = () => {
                                     >
                                         <Button
                                             buttons={buttonFit}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Đăng ký tư vấn <FaRegEnvelope />
                                         </Button>
                                         <Button
                                             buttons={buttonsOutline}
-                                            handlerShowModal={handlerShowModal}
+                                            dispatch={dispatch}
                                         >
                                             Chi tiêt <FaArrowRightLong />
                                         </Button>

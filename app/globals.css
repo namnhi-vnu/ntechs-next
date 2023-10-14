@@ -331,6 +331,42 @@ body.active::after {
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+/* 
+    alert
+
+*/
+div #toast-top-right {
+    right: 1%;
+    animation-name: showalert;
+    animation-duration: 3s;
+}
+
+@keyframes showalert {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 1%;
+    }
+}
+
+.lines-alert {
+    width: 0;
+    animation-name: identifier;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes identifier {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .business {
         background-image: none;

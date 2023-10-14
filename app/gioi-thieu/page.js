@@ -1,11 +1,6 @@
 "use client";
-import React, { useContext } from "react";
-
-import { ModalContext } from "../contexts/ModalContext";
 
 const About = () => {
-    const { showModal } = useContext(ModalContext);
-
     return (
         <div className="abouts relative mt-3">
             <main className="">

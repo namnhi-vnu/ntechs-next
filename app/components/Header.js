@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useContext } from "react";
+
 import {
     FaAngleDown,
     FaBarsStaggered,
@@ -11,20 +11,18 @@ import {
     FaRegEnvelope,
     FaYoutube,
 } from "react-icons/fa6";
-import { ModalContext } from "../contexts/ModalContext";
+import { useStore } from "../store/hooks/useStore";
+import { setShowModal } from "../store/reducer/action";
+import { BiCheckCircle } from "react-icons/bi";
+import ToastAlert from "./button/ToastAlert";
+
 const Header = () => {
     const router = usePathname();
-    // const isActive = (path) => (router.pathname === path ? "active" : "");
-    // useEffect(() => {
-    //     isActive();
-    // }, [router.pathname]);
-    // console.log(router.pathname);
-
-    const { handlerShowModal } = useContext(ModalContext);
-
+    const [state, dispatch] = useStore();
+    const { isLoadSendModal } = state;
     return (
         <>
-            <header className="header font-fira">
+            <header className="header relative font-fira">
                 <div className="top-bar bg-[#084183]">
                     <div className="container mx-auto">
                         <div className="topbar-main flex justify-between max-md:justify-end">
@@ -295,9 +293,9 @@ const Header = () => {
                                 </li>
                                 <li className="text-[#084183] font-semibold hover:text-hover py-2">
                                     <Link
-                                        href="#"
+                                        href="/lien-he"
                                         className={`${
-                                            router === "#"
+                                            router === "/lien-he"
                                                 ? "bg-hover  hover:text-white text-white hover:bg-hover "
                                                 : "hover:bg-red-100"
                                         } p-2 rounded-lg flex items-center gap-1 `}
@@ -306,7 +304,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li
-                                    onClick={() => handlerShowModal()}
+                                    onClick={() => dispatch(setShowModal())}
                                     className="bg-[#084183] cursor-pointer text-white py-2 px-3 rounded-md "
                                 >
                                     <Link href="#">Đăng Ký</Link>
@@ -315,6 +313,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                {isLoadSendModal && <ToastAlert />}
+                {/* <ToastAlert /> */}
             </header>
         </>
     );

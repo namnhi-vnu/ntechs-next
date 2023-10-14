@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/pages/Footer";
-import { ModalProvider } from "./contexts/ModalContext";
+import ModalProvider from "./store/contexts/Provider";
 import "./globals.css";
 
 export const metadata = {

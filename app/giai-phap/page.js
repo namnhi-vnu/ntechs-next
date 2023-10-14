@@ -1,3 +1,4 @@
+"use client";
 import {
     FaArrowRightLong,
     FaPhone,
@@ -9,7 +10,9 @@ import Button from "../components/button/Button";
 import { buttonsOutline, buttonFit } from "../components/Banner";
 import Contacts from "../components/Contacts";
 import Link from "next/link";
+import { useStore } from "../store/hooks/useStore";
 const page = () => {
+    const [state, dispatch] = useStore();
     const typing = [
         "Giải Pháp Thông Minh Của NTechs",
         2000,
@@ -47,7 +50,7 @@ const page = () => {
                                         </span>
                                     </Button>
                                 </Link>
-                                <Button buttons={buttonFit}>
+                                <Button buttons={buttonFit} dispatch={dispatch}>
                                     Tư vấn miễn phí <FaTelegram />
                                 </Button>
                             </div>
@@ -178,10 +181,16 @@ const page = () => {
                                             data-aos="fade-up"
                                             data-aos-duration="1000"
                                         >
-                                            <Button buttons={buttonFit}>
+                                            <Button
+                                                buttons={buttonFit}
+                                                dispatch={dispatch}
+                                            >
                                                 Đăng ký tư vấn <FaRegEnvelope />
                                             </Button>
-                                            <Button buttons={buttonsOutline}>
+                                            <Button
+                                                buttons={buttonsOutline}
+                                                dispatch={dispatch}
+                                            >
                                                 Chi tiêt <FaArrowRightLong />
                                             </Button>
                                         </div>
@@ -313,10 +322,16 @@ const page = () => {
                                             data-aos="fade-up"
                                             data-aos-duration="1000"
                                         >
-                                            <Button buttons={buttonFit}>
+                                            <Button
+                                                buttons={buttonFit}
+                                                dispatch={dispatch}
+                                            >
                                                 Đăng ký tư vấn <FaRegEnvelope />
                                             </Button>
-                                            <Button buttons={buttonsOutline}>
+                                            <Button
+                                                buttons={buttonsOutline}
+                                                dispatch={dispatch}
+                                            >
                                                 Chi tiêt <FaArrowRightLong />
                                             </Button>
                                         </div>
