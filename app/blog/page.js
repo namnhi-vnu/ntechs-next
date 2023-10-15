@@ -8,7 +8,7 @@ const page = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         axios
-            .get("https://ntechs-api.vercel.app/get-posts")
+            .get("https://ntechs-api.vercel.app/api/get-posts")
             .then((response) => {
                 const post = response.data;
                 console.log(post);
@@ -18,7 +18,7 @@ const page = () => {
                 console.error("Lỗi khi gọi API:", error);
             });
     }, []);
-    console.log(posts);
+    // console.log(posts);
 
     return (
         <div className="blogs">

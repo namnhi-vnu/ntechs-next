@@ -89,7 +89,7 @@ const About = () => {
                                         <h2 className="text-[1.4em] font-semibold text-center pb-3">
                                             Trở thành đơn vị số 1
                                         </h2>
-                                        <p className="text-lg">
+                                        <p className="text-lg text-center">
                                             Chuyên thiết kế phát triển ứng dụng
                                             đa nền tảng, giúp các doanh nghiệp
                                             phát triển nâng tầm thương hiệu
@@ -104,7 +104,7 @@ const About = () => {
                                         <h2 className="text-[1.4em] font-semibold text-center pb-3">
                                             Hợp tác phát triển
                                         </h2>
-                                        <p className="text-lg">
+                                        <p className="text-lg text-center">
                                             Cùng hơn 10.000 doanh nghiệp trong
                                             quá trình xây dựng và phát triển
                                             doanh nghiệp.
@@ -119,7 +119,7 @@ const About = () => {
                                         <h2 className="text-[1.4em] font-semibold text-center pb-3">
                                             Cung cấp mẫu thiết kế
                                         </h2>
-                                        <p className="text-lg">
+                                        <p className="text-lg text-center">
                                             Tạo ra hơn 5000 mẫu thiết kế Mobile
                                             App ưu việt giúp gia tăng lợi nhuận,
                                             tối ưu chi phí và nâng cao giá trị
