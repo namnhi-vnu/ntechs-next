@@ -11,7 +11,7 @@ const page = () => {
             .get("https://ntechs-api.vercel.app/api/get-posts")
             .then((response) => {
                 const post = response.data;
-                console.log(post);
+
                 setPosts(post);
             })
             .catch((error) => {
