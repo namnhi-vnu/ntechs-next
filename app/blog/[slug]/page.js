@@ -30,8 +30,8 @@ const Page = ({ params }) => {
     return (
         <>
             <div className="post-detail">
-                <div className="container mx-auto w-[60%] py-8">
-                    <div className="grid grid-cols-4 gap-4">
+                <div className="container mx-auto w-[60%] py-8 max-md:w-full">
+                    <div className="grid grid-cols-4 gap-4 max-md:grid-cols-1">
                         <div className="col-span-3 shadow-xl p-4 rounded-xl">
                             {post ? (
                                 <div>
@@ -39,7 +39,7 @@ const Page = ({ params }) => {
                                         {post.title.rendered + " NTechs"}
                                     </title>
                                     <div className="border-b-[1px] border-slate-400 py-2">
-                                        <h1 className="text-[2em] font-semibold">
+                                        <h1 className="text-[2em] max-md:text-[1.5em] font-semibold">
                                             {post.title.rendered}
                                         </h1>
                                         <div className="flex items-center justify-between text-sm">

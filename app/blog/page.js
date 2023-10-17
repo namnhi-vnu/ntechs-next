@@ -32,9 +32,9 @@ const Page = () => {
     return (
         <div className="blogs">
             <title>Blog - NTechs</title>
-            <div className="container mx-auto">
+            <div className="container mx-auto max-md:px-2">
                 <BannerBlog />
-                <div className="list grid grid-cols-4 gap-8 py-8">
+                <div className="list grid grid-cols-4 gap-8 py-8 max-md:grid-cols-2 max-md:gap-4">
                     {!isLoading &&
                         posts.map((post) => (
                             <div
