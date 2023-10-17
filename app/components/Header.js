@@ -63,7 +63,8 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="https://www.facebook.com/info.ntechs"
+                                        target="_blank"
                                         className="text-white text-xl"
                                     >
                                         <span>

@@ -150,18 +150,18 @@ const page = () => {
                                             />
                                         </div>
                                         <div className="pb-4">
-                                            <p className="">Họ Tên</p>
+                                            <p className="">Số điện thoại</p>
                                             <input
                                                 type="text"
-                                                placeholder="Họ tên"
+                                                placeholder="Số điện thoại"
                                                 className=" border border-slate-500 p-2 rounded-lg w-full outline-none  focus:outline-teal-800"
                                             />
                                         </div>
                                         <div className="pb-4">
-                                            <p className="">Họ Tên</p>
+                                            <p className="">Email</p>
                                             <input
-                                                type="text"
-                                                placeholder="Họ tên"
+                                                type="email"
+                                                placeholder="Email"
                                                 className=" border border-slate-500 p-2 rounded-lg w-full outline-none  focus:outline-teal-800"
                                             />
                                         </div>

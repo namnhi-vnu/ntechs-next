@@ -16,6 +16,7 @@ module.exports = {
                 ntechs: "#084183",
                 hover: "#EB681B",
                 "black-rgba": "rgba(235,104,27,.4)",
+                "bg-rgba": "rgba(235,104,27,.2)",
             },
             minWidth: {
                 menu: "200px",
