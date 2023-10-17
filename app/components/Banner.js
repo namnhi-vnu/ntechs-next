@@ -53,7 +53,7 @@ const BannerHome = () => {
                                 style="text-5ml font-bold text-hover leading-13 sm:text-md  max-md:text-[1.6em] max-md:leading-[1.5em]"
                             />
                             <div className="desc mt-5">
-                                <p className="text-[#858a8f] text-[1.2em]">
+                                <p className="text-[#525151] text-[1.2em]">
                                     Gia tăng nhận diện, Gắn kết khách hàng, Tăng
                                     nhanh doanh số
                                     <br className="max-md:hidden" /> và Thúc đẩy

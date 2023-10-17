@@ -21,6 +21,7 @@ const page = () => {
     ];
     return (
         <>
+            <title>Giải Pháp - NTechs</title>
             <div className="solution">
                 <div className="banners min-h-[300px]">
                     <div className="container mx-auto relative z-10 py-8 max-md:px-[0.5em]">

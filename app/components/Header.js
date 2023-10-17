@@ -55,6 +55,7 @@ const Header = () => {
                                     <Link
                                         href="#"
                                         className="text-white text-xl"
+                                        title="Youtube"
                                     >
                                         <span>
                                             <FaYoutube />
@@ -66,6 +67,7 @@ const Header = () => {
                                         href="https://www.facebook.com/info.ntechs"
                                         target="_blank"
                                         className="text-white text-xl"
+                                        title="Facebook"
                                     >
                                         <span>
                                             <FaFacebook />
@@ -75,6 +77,7 @@ const Header = () => {
                                 <li>
                                     <Link
                                         href="/blog"
+                                        title="Blog"
                                         className="flex items-center gap-2 text-white bg-[#EB681B] p-2 "
                                     >
                                         <span>
@@ -91,13 +94,15 @@ const Header = () => {
                 <div className="menu-main">
                     <div className="container mx-auto py-2 flex items-center max-md:px-[1em]">
                         <div className="ntechs-logo w-[150px]">
-                            <Link href="/">
-                                <img
-                                    src="./logo-ntechs.png"
-                                    alt=""
-                                    className="w-full"
-                                />
-                            </Link>
+                            <h1 title="Công Ty Cổ Phần Công Nghệ NTechs Việt Nam">
+                                <Link href="/">
+                                    <img
+                                        src="./logo-ntechs.png"
+                                        alt="Công Ty Cổ Phần Công Nghệ NTechs Việt Nam"
+                                        className="w-full"
+                                    />
+                                </Link>
+                            </h1>
                         </div>
                         <div className="menus grow max-md:flex max-md:items-center max-md:justify-end ">
                             <span className="hidden max-md:block text-[1.7em]  mr-3 mt-3 text-ntechs">
