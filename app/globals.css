@@ -363,6 +363,7 @@ div #toast-top-right {
     right: 1%;
     animation-name: showalert;
     animation-duration: 2s;
+    top: 13%;
 }
 
 @keyframes showalert {

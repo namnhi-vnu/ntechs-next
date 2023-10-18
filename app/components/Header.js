@@ -50,12 +50,13 @@ const Header = () => {
                                     </Link>
                                 </li>
                             </ul>
-                            <ul className="flex items-center gap-8">
+                            <ul className="flex items-center gap-8 max-md:pr-4">
                                 <li>
                                     <Link
                                         href="#"
                                         className="text-white text-xl"
                                         title="Youtube"
+                                        alt="Youtube"
                                     >
                                         <span>
                                             <FaYoutube />
@@ -68,6 +69,7 @@ const Header = () => {
                                         target="_blank"
                                         className="text-white text-xl"
                                         title="Facebook"
+                                        alt="Facebook"
                                     >
                                         <span>
                                             <FaFacebook />
@@ -78,7 +80,7 @@ const Header = () => {
                                     <Link
                                         href="/blog"
                                         title="Blog"
-                                        className="flex items-center gap-2 text-white bg-[#EB681B] p-2 "
+                                        className="flex items-center gap-2 text-white font-semibold bg-[#EB681B] p-2 px-3"
                                     >
                                         <span>
                                             <FaBlog />
@@ -150,7 +152,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./user-interface.png"
-                                                        alt=""
+                                                        alt="Giải Pháp Mobile APP"
                                                     />
                                                     Giải Pháp Mobile APP
                                                 </Link>
@@ -163,7 +165,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./website.png"
-                                                        alt=""
+                                                        alt="Thiết Kế Website"
                                                     />
                                                     Thiết Kế Website
                                                 </Link>
@@ -176,7 +178,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./affiliate-marketing.png"
-                                                        alt=""
+                                                        alt="Giải Pháp Mobile APP"
                                                     />
                                                     Giải Pháp Mobile APP
                                                 </Link>
@@ -189,7 +191,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./crm.png"
-                                                        alt=""
+                                                        alt="Giải Pháp CRM"
                                                     />
                                                     Giải Pháp CRM
                                                 </Link>
@@ -202,7 +204,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./erpsystem.png"
-                                                        alt=""
+                                                        alt="Giải Pháp ERP"
                                                     />
                                                     Giải Pháp ERP
                                                 </Link>
@@ -215,7 +217,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./erpsystem.png"
-                                                        alt=""
+                                                        alt="Giải Pháp Elearning"
                                                     />
                                                     Giải Pháp Elearning
                                                 </Link>
@@ -228,7 +230,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./smart-system.png"
-                                                        alt=""
+                                                        alt="Hệ Thống Trường Học"
                                                     />
                                                     Hệ Thống Trường Học
                                                 </Link>
@@ -241,7 +243,7 @@ const Header = () => {
                                                     <img
                                                         className="w-9"
                                                         src="./mobile-game.png"
-                                                        alt=""
+                                                        alt="Website Game"
                                                     />
                                                     Website Game
                                                 </Link>
