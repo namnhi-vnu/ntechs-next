@@ -8,19 +8,19 @@ import LoadingBlog from "./LoadingBlog";
 const Page = () => {
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    useEffect(() => {
-        setIsLoading(true);
-        axios
-            .get("https://ntechs-api.vercel.app/api/get-posts")
-            .then((response) => {
-                const post = response.data;
-                setPosts(post);
-                setIsLoading(false);
-            })
-            .catch((error) => {
-                console.error("Lỗi khi gọi API:", error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     setIsLoading(true);
+    //     axios
+    //         .get("https://ntechs-api.vercel.app/api/get-posts")
+    //         .then((response) => {
+    //             const post = response.data;
+    //             setPosts(post);
+    //             setIsLoading(false);
+    //         })
+    //         .catch((error) => {
+    //             console.error("Lỗi khi gọi API:", error);
+    //         });
+    // }, []);
 
     const dateTimeString = (date) => {
         const dates = new Date(date);
@@ -34,6 +34,7 @@ const Page = () => {
             <title>Blog - NTechs</title>
             <div className="container mx-auto max-md:px-2">
                 <BannerBlog />
+                <h2 className="text-center py-8 text-2xl">Coming Soon</h2>
                 <div className="list grid grid-cols-4 gap-8 py-8 max-md:grid-cols-2 max-md:gap-4">
                     {!isLoading &&
                         posts.map((post) => (

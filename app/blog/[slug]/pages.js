@@ -8,18 +8,18 @@ const Page = ({ params }) => {
     // Khai báo state để lưu dữ liệu bài viết chi tiết
     const [post, setPost] = useState(null);
 
-    useEffect(() => {
-        // Gọi API để lấy chi tiết bài viết dựa trên slug
-        axios
-            .get(`https://ntechs-api.vercel.app/api/post-detail/${slug}`)
-            .then((response) => {
-                const postData = response.data;
-                setPost(postData);
-            })
-            .catch((error) => {
-                console.error("Lỗi khi gọi API:", error);
-            });
-    }, [slug]);
+    // useEffect(() => {
+    //     // Gọi API để lấy chi tiết bài viết dựa trên slug
+    //     axios
+    //         .get(`https://ntechs-api.vercel.app/api/post-detail/${slug}`)
+    //         .then((response) => {
+    //             const postData = response.data;
+    //             setPost(postData);
+    //         })
+    //         .catch((error) => {
+    //             console.error("Lỗi khi gọi API:", error);
+    //         });
+    // }, [slug]);
 
     const dateTimeString = (date) => {
         const dates = new Date(date);
