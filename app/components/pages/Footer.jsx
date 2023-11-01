@@ -155,7 +155,7 @@ const Footer = () => {
                                 <ul>
                                     <li className="leading-8">
                                         <Link
-                                            href="#"
+                                            href="/giai-phap"
                                             className="hover:text-hover font-extralight hover:underline"
                                         >
                                             Giải pháp
@@ -163,7 +163,7 @@ const Footer = () => {
                                     </li>
                                     <li className="leading-8">
                                         <Link
-                                            href="#"
+                                            href="/lien-he"
                                             className="hover:text-hover font-extralight hover:underline"
                                         >
                                             Liên hệ
@@ -179,7 +179,7 @@ const Footer = () => {
                                     </li>
                                     <li className="leading-8">
                                         <Link
-                                            href="#"
+                                            href="/gioi-thieu"
                                             className="hover:text-hover font-extralight hover:underline"
                                         >
                                             Về NTechs
