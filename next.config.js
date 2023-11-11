@@ -8,9 +8,6 @@ const nextConfig = {
             },
         ];
     },
-    experimental: {
-    useFileSystemPublicRoutes: true,
-  },
 };
 
 module.exports = nextConfig;
