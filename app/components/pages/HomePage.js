@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import Button from "../button/Button";
 import BannerHome, { buttonsOutline, buttonFit } from "../Banner";
@@ -63,7 +63,12 @@ const HomePage = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img src="./Icon.png" alt="" />
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon.png"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="texts">
                                                 <h3 className="text-xl leading-7 font-semibold">
@@ -85,8 +90,10 @@ const HomePage = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon-1.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon-1.png"
                                                     alt=""
                                                 />
                                             </div>
@@ -110,8 +117,10 @@ const HomePage = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon_Total-Control.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon_Total-Control.png"
                                                     alt=""
                                                 />
                                             </div>
@@ -193,7 +202,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold">
@@ -214,7 +228,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon-1.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon-1.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold">
@@ -235,8 +254,10 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img
-                                                src="./Icon_Total-Control.png"
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon_Total-Control.png"
                                                 alt=""
                                             />
                                         </div>
@@ -280,8 +301,10 @@ const HomePage = () => {
                                 data-aos-duration="1000"
                             >
                                 {/* <img src="./application.png" alt="" /> */}
-                                <img
-                                    src="./apply.png"
+                                <Image
+                                    width={614}
+                                    height={657}
+                                    src="/apply.png"
                                     className="w-4/5 max-md:w-full"
                                     alt=""
                                 />
@@ -297,8 +320,10 @@ const HomePage = () => {
                                 data-aos="fade-right"
                                 data-aos-duration="1000"
                             >
-                                <img
-                                    src="./erps.png"
+                                <Image
+                                    width={613}
+                                    height={651}
+                                    src="/erps.png"
                                     className="w-4/5 max-md:w-full"
                                     alt=""
                                 />
@@ -345,7 +370,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold text-white">
@@ -368,7 +398,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon-1.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon-1.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold text-white">
@@ -389,8 +424,10 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img
-                                                src="./Icon_Total-Control.png"
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon_Total-Control.png"
                                                 alt=""
                                             />
                                         </div>
@@ -414,7 +451,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold text-white">
@@ -492,7 +534,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold">
@@ -514,7 +561,12 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img src="./Icon-1.png" alt="" />
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon-1.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="texts">
                                             <h3 className="text-xl leading-7 font-semibold">
@@ -534,8 +586,10 @@ const HomePage = () => {
                                         data-aos-duration="1000"
                                     >
                                         <div className="img max-md:w-[90px] max-md:mt-1">
-                                            <img
-                                                src="./Icon_Total-Control.png"
+                                            <Image
+                                                width={55}
+                                                height={55}
+                                                src="/Icon_Total-Control.png"
                                                 alt=""
                                             />
                                         </div>
@@ -577,8 +631,10 @@ const HomePage = () => {
                                 data-aos="fade-left"
                                 data-aos-duration="1000"
                             >
-                                <img
-                                    src="./banner-home-3-3_auto_x2-1536x905.png"
+                                <Image
+                                    width={614}
+                                    height={360}
+                                    src="/banner-home-3-3_auto_x2-1536x905.png"
                                     className="lg:w-4/5 max-md:w-full"
                                     alt=""
                                 />
@@ -603,8 +659,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./page-pana.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/page-pana.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -619,8 +677,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./shop-rafiki.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/shop-rafiki.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -636,8 +696,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./booking-rafiki.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/booking-rafiki.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -653,8 +715,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./company-amico.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/company-amico.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -670,8 +734,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./seminar-bro.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/seminar-bro.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -686,8 +752,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./shelter-cuate.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/shelter-cuate.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -702,8 +770,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./sale-pana.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/sale-pana.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -719,8 +789,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./research-amico.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/research-amico.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -735,8 +807,10 @@ const HomePage = () => {
                                 <div className="item">
                                     <Link href="/">
                                         <div className="img">
-                                            <img
-                                                src="./globalization-cuate.svg"
+                                            <Image
+                                                width={213}
+                                                height={191}
+                                                src="/globalization-cuate.svg"
                                                 alt=""
                                                 className="min-h-[191px] w-full max-h-[191px]"
                                             />
@@ -779,9 +853,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-4.png"
+                                            src="/Icon-4.png"
                                             alt=""
                                         />
                                     </div>
@@ -802,9 +878,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-1-1.png"
+                                            src="/Icon-1-1.png"
                                             alt=""
                                         />
                                     </div>
@@ -825,9 +903,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-2-1.png"
+                                            src="/Icon-2-1.png"
                                             alt=""
                                         />
                                     </div>
@@ -848,9 +928,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-5.png"
+                                            src="/Icon-5.png"
                                             alt=""
                                         />
                                     </div>
@@ -871,9 +953,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-4-1.png"
+                                            src="/Icon-4-1.png"
                                             alt=""
                                         />
                                     </div>
@@ -894,9 +978,11 @@ const HomePage = () => {
                                     data-aos-duration="1000"
                                 >
                                     <div className="box-img">
-                                        <img
+                                        <Image
+                                            width={55}
+                                            height={55}
                                             className="min-w-[50px] inline-block"
-                                            src="./Icon-3-1.png"
+                                            src="/Icon-3-1.png"
                                             alt=""
                                         />
                                     </div>
@@ -934,8 +1020,10 @@ const HomePage = () => {
                         >
                             <div className="specific-number__list grid grid-cols-4 max-md:grid-cols-2">
                                 <div className="specific-number__item border-r-[1px] max-md:border-b-[1px]  p-[2.5em] max-md:px-[1em] text-center">
-                                    <img
-                                        src="https://ntechs.vn/wp-content/themes/ntechs/images/medal-star.png"
+                                    <Image
+                                        width={55}
+                                        height={55}
+                                        src="/medal-star.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
                                         alt=""
                                     />
@@ -948,8 +1036,10 @@ const HomePage = () => {
                                     <p>Năm hoạt động</p>
                                 </div>
                                 <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
-                                    <img
-                                        src="https://ntechs.vn/wp-content/themes/ntechs/images/Badge-3.png"
+                                    <Image
+                                        width={55}
+                                        height={55}
+                                        src="/Badge-3.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
                                         alt=""
                                     />
@@ -959,8 +1049,10 @@ const HomePage = () => {
                                     <p>Doanh nghiệp đồng hành</p>
                                 </div>
                                 <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
-                                    <img
-                                        src="https://ntechs.vn/wp-content/themes/ntechs/images/Icon_Transparency.png"
+                                    <Image
+                                        width={55}
+                                        height={55}
+                                        src="/Icon_Transparency.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
                                         alt=""
                                     />
@@ -970,8 +1062,10 @@ const HomePage = () => {
                                     <p>Dự án đã thực hiện</p>
                                 </div>
                                 <div className="specific-number__item border-r-[1px] max-md:border-b-[1px] p-[2.5em] max-md:px-[1em] text-center">
-                                    <img
-                                        src="https://ntechs.vn/wp-content/themes/ntechs/images/Badge.png"
+                                    <Image
+                                        width={55}
+                                        height={55}
+                                        src="/Badge.png"
                                         className="w-[45px] inline-block mb-[0.5em]"
                                         alt=""
                                     />

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 const About = () => {
     return (
         <>
@@ -7,10 +7,18 @@ const About = () => {
             <div className="abouts relative mt-3">
                 <main className="">
                     <div className="banner-about text-center py-6 min-h-[350px] flex items-baseline justify-center">
-                        <img src="./canvaleft.png" alt="" className="left" />
-                        <img
-                            src="./canvaleft.png"
+                        <Image
+                            src="/canvaleft.png"
                             alt=""
+                            className="left"
+                            width={100}
+                            height={100}
+                        />
+                        <Image
+                            src="/canvaleft.png"
+                            alt=""
+                            width={100}
+                            height={100}
                             className="right max-md:hidden"
                         />
                         <div className="z-20 relative">
@@ -26,20 +34,26 @@ const About = () => {
                     <div className=" bg-white about-contents relative">
                         <div className="container  mx-auto py-6 ">
                             <div className="flex max-md:flex-col  relative bg-white max-w-[850px] mt-[-8em] gap-4 rounded-lg mx-auto p-[1em] shadow-md">
-                                <img
-                                    src="./canvaleft.png"
+                                <Image
+                                    src="/canvaleft.png"
                                     alt=""
+                                    width={100}
+                                    height={100}
                                     className="left w-[12%]"
                                 />
-                                <img
-                                    src="./canvaright.png"
+                                <Image
+                                    src="/canvaright.png"
                                     alt=""
+                                    width={100}
+                                    height={100}
                                     className="right"
                                 />
                                 <div className="img flex items-center justify-between flex-1">
-                                    <img
-                                        src="./office.svg"
+                                    <Image
+                                        src="/office.svg"
                                         alt=""
+                                        width={100}
+                                        height={100}
                                         className="w-[35%] flex-1"
                                     />
                                 </div>
@@ -86,9 +100,11 @@ const About = () => {
                                 <div className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
                                     <div className="p-4 rounded-lg hover:shadow-lg">
                                         <div className="pb-8 flex items-center justify-center">
-                                            <img
-                                                src="./medal-star.png"
+                                            <Image
+                                                src="/medal-star.png"
                                                 alt=""
+                                                width={50}
+                                                height={50}
                                             />
                                         </div>
                                         <div className="">
@@ -105,7 +121,12 @@ const About = () => {
                                     </div>
                                     <div className="shadow-lg p-4 rounded-lg border border-hover">
                                         <div className="pb-8 flex items-center justify-center">
-                                            <img src="./Icon-5.png" alt="" />
+                                            <Image
+                                                src="/Icon-5.png"
+                                                width={50}
+                                                height={50}
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="">
                                             <h2 className="text-[1.4em] font-semibold text-center pb-3">
@@ -120,7 +141,12 @@ const About = () => {
                                     </div>
                                     <div className=" p-4 rounded-lg hover:shadow-lg">
                                         <div className="pb-8 flex items-center justify-center">
-                                            <img src="./Icon-2-1.png" alt="" />
+                                            <Image
+                                                width={50}
+                                                height={50}
+                                                src="/Icon-2-1.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="">
                                             <h2 className="text-[1.4em] font-semibold text-center pb-3">

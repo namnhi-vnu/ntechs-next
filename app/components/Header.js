@@ -13,8 +13,8 @@ import {
 } from "react-icons/fa6";
 import { useStore } from "../store/hooks/useStore";
 import { setShowModal } from "../store/reducer/action";
-import { BiCheckCircle } from "react-icons/bi";
 import ToastAlert from "./button/ToastAlert";
+import Image from "next/image";
 
 const Header = () => {
     const router = usePathname();
@@ -98,8 +98,10 @@ const Header = () => {
                         <div className="ntechs-logo w-[150px]">
                             <h1 title="Công Ty Cổ Phần Công Nghệ NTechs Việt Nam">
                                 <Link href="/">
-                                    <img
-                                        src="./logo-ntechs.png"
+                                    <Image
+                                        width={160}
+                                        height={160}
+                                        src="/logo-ntechs.png"
                                         alt="Công Ty Cổ Phần Công Nghệ NTechs Việt Nam"
                                         className="w-full"
                                     />
@@ -149,9 +151,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./user-interface.png"
+                                                        src="/user-interface.png"
                                                         alt="Giải Pháp Mobile APP"
                                                     />
                                                     Giải Pháp Mobile APP
@@ -162,9 +166,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./website.png"
+                                                        src="/website.png"
                                                         alt="Thiết Kế Website"
                                                     />
                                                     Thiết Kế Website
@@ -175,9 +181,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./affiliate-marketing.png"
+                                                        src="/affiliate-marketing.png"
                                                         alt="Giải Pháp Mobile APP"
                                                     />
                                                     Giải Pháp Mobile APP
@@ -188,9 +196,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./crm.png"
+                                                        src="/crm.png"
                                                         alt="Giải Pháp CRM"
                                                     />
                                                     Giải Pháp CRM
@@ -201,9 +211,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./erpsystem.png"
+                                                        src="/erpsystem.png"
                                                         alt="Giải Pháp ERP"
                                                     />
                                                     Giải Pháp ERP
@@ -214,9 +226,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./erpsystem.png"
+                                                        src="/erpsystem.png"
                                                         alt="Giải Pháp Elearning"
                                                     />
                                                     Giải Pháp Elearning
@@ -227,9 +241,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./smart-system.png"
+                                                        src="/smart-system.png"
                                                         alt="Hệ Thống Trường Học"
                                                     />
                                                     Hệ Thống Trường Học
@@ -240,9 +256,11 @@ const Header = () => {
                                                     href="#"
                                                     className=" px-4 py-2 rounded-md text-lg font-normal hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-ntechs flex items-center gap-2"
                                                 >
-                                                    <img
+                                                    <Image
+                                                        width={36}
+                                                        height={36}
                                                         className="w-9"
-                                                        src="./mobile-game.png"
+                                                        src="/mobile-game.png"
                                                         alt="Website Game"
                                                     />
                                                     Website Game

@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import Modals from "../Modals";
 import { useStore } from "../../store/hooks/useStore";
+import Image from "next/image";
 
 const Footer = () => {
     const [state] = useStore();
@@ -18,8 +19,20 @@ const Footer = () => {
     return (
         <>
             <footer className="bg-[#0C0129] ">
-                <img src="./canvaleft.png" alt="" className="canvas-right " />
-                <img src="./canvaright.png" alt="" className="canvas-left" />
+                <Image
+                    width={160}
+                    height={160}
+                    src="/canvaleft.png"
+                    alt=""
+                    className="canvas-right "
+                />
+                <Image
+                    width={160}
+                    height={160}
+                    src="/canvaright.png"
+                    alt=""
+                    className="canvas-left"
+                />
                 <div className="container mx-auto pt-[3em] pb-[4em] max-md:px-[1em]">
                     <div className="contents">
                         <div
@@ -28,7 +41,12 @@ const Footer = () => {
                             data-aos-duration="1000"
                         >
                             <div className="logo w-[160px]">
-                                <img src="./logo-ntechs.png" alt="" />
+                                <Image
+                                    width={160}
+                                    height={78}
+                                    src="/logo-ntechs.png"
+                                    alt=""
+                                />
                             </div>
                         </div>
                         <div className="grid grid-cols-6 gap-4 max-md:grid-cols-1 ">

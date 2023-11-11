@@ -7,6 +7,7 @@ import { FaPhone, FaTelegram } from "react-icons/fa6";
 import TypingEffect from "./TypingEffect";
 import Button from "./button/Button";
 import { useStore } from "../store/hooks/useStore";
+import Image from "next/image";
 
 const buttonsOutline = {
     border: "border-2 border-ntechs py-1 px-3 rounded-md flex items-center gap-2 text-ntechs transition transition-all cursor-pointer hover:bg-ntechs hover:text-white ",
@@ -14,24 +15,24 @@ const buttonsOutline = {
 const buttonFit = {
     border: "border-2 border-ntechs py-1 px-3 rounded-md flex items-center gap-2 text-white bg-ntechs transition-all  cursor-pointer hover:bg-white hover:text-ntechs",
 };
+
+const typing = [
+    "Thương mại điện tử",
+    2000,
+    "Giải pháp Mobile APP",
+    2000,
+    "Hệ thống ERP",
+    2000,
+    "Hệ thống Affiliate Marketing",
+    2000,
+    "Số 1 Việt Nam",
+    2000,
+];
 const BannerHome = () => {
     const [state, dispatch] = useStore();
     useEffect(() => {
         AOS.init();
     }, []);
-
-    const typing = [
-        "Thương mại điện tử",
-        2000,
-        "Giải pháp Mobile APP",
-        2000,
-        "Hệ thống ERP",
-        2000,
-        "Hệ thống Affiliate Marketing",
-        2000,
-        "Số 1 Việt Nam",
-        2000,
-    ];
 
     return (
         <>
@@ -85,10 +86,12 @@ const BannerHome = () => {
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
-                            <img
-                                src="./banner-ntechs.png"
+                            <Image
+                                src="/banner-ntechs.png"
                                 alt="ntechs banner"
-                                className="z-10 relative"
+                                width={609}
+                                height={609}
+                                className="z-10 relative w-[609px]"
                             />
                             <span className="affles"></span>
                         </div>

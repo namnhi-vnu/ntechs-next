@@ -4,6 +4,7 @@ import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
 import Button from "./button/Button";
 import { buttonFit, buttonsOutline } from "./Banner";
 import { useStore } from "../store/hooks/useStore";
+import Image from "next/image";
 
 const Contacts = () => {
     const [state, dispatch] = useStore();
@@ -45,8 +46,10 @@ const Contacts = () => {
                                 data-aos="fade-up"
                                 data-aos-duration="1000"
                             >
-                                <img
-                                    src="https://ntechs.vn/wp-content/themes/ntechs/images/Frame-698.png"
+                                <Image
+                                    width={430}
+                                    height={539}
+                                    src="/Frame-698.png"
                                     className="w-full"
                                     alt=""
                                 />

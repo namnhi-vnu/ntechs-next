@@ -11,14 +11,17 @@ import { buttonsOutline, buttonFit } from "../components/Banner";
 import Contacts from "../components/Contacts";
 import Link from "next/link";
 import { useStore } from "../store/hooks/useStore";
+import Image from "next/image";
+
+const typing = [
+    "Giải Pháp Thông Minh Của NTechs",
+    2000,
+    "Nâng Tầm Doanh Nghiệp Của Bạn",
+    2000,
+];
 const page = () => {
     const [state, dispatch] = useStore();
-    const typing = [
-        "Giải Pháp Thông Minh Của NTechs",
-        2000,
-        "Nâng Tầm Doanh Nghiệp Của Bạn",
-        2000,
-    ];
+
     return (
         <>
             <title>Giải Pháp - NTechs</title>
@@ -59,8 +62,20 @@ const page = () => {
                     </div>
                 </div>
                 <div className="service bg-white  py-10 relative">
-                    <img src="./canvaleft.png" alt="" className="left" />
-                    <img src="./canvaright.png" alt="" className="right" />
+                    <Image
+                        width={160}
+                        height={160}
+                        src="/canvaleft.png"
+                        alt=""
+                        className="left"
+                    />
+                    <Image
+                        width={160}
+                        height={160}
+                        src="/canvaright.png"
+                        alt=""
+                        className="right"
+                    />
 
                     <div className="container mx-auto max-md:px-[1em]">
                         <div className="text-center ">
@@ -109,7 +124,12 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img src="./Icon.png" alt="" />
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon.png"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="texts">
                                                 <h3 className="text-xl leading-7 font-semibold">
@@ -131,8 +151,10 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon-1.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon-1.png"
                                                     alt=""
                                                 />
                                             </div>
@@ -157,8 +179,10 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon_Total-Control.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon_Total-Control.png"
                                                     alt=""
                                                 />
                                             </div>
@@ -198,8 +222,10 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-center">
-                                    <img
-                                        src="./web.svg"
+                                    <Image
+                                        width={746}
+                                        height={429}
+                                        src="/web.svg"
                                         alt=""
                                         data-aos="fade-left"
                                         data-aos-duration="1000"
@@ -209,8 +235,10 @@ const page = () => {
                             </div>
                             <div className="grid 2xl:grid-cols-2 my-3 xl:grid-cols-2 sm:grid-cols-1 sm:px-3 gap-5 max-md:flex max-md:flex-col-reverse aos-init aos-animate">
                                 <div className="flex items-center justify-center">
-                                    <img
-                                        src="./app-03.png"
+                                    <Image
+                                        width={336}
+                                        height={674}
+                                        src="/app-03.png"
                                         alt=""
                                         data-aos="zoom-in-up"
                                         data-aos-duration="1000"
@@ -250,7 +278,12 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img src="./Icon.png" alt="" />
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon.png"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="texts">
                                                 <h3 className="text-xl leading-7 font-semibold">
@@ -272,8 +305,10 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon-1.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon-1.png"
                                                     alt=""
                                                 />
                                             </div>
@@ -298,8 +333,10 @@ const page = () => {
                                             data-aos-duration="1000"
                                         >
                                             <div className="img max-md:w-[90px] max-md:mt-1">
-                                                <img
-                                                    src="./Icon_Total-Control.png"
+                                                <Image
+                                                    width={55}
+                                                    height={55}
+                                                    src="/Icon_Total-Control.png"
                                                     alt=""
                                                 />
                                             </div>
