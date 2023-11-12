@@ -58,7 +58,7 @@ const Modals = () => {
                 <div className="w-[40%] max-md:hidden flex items-center justify-center border-r-[1px] pr-1">
                     <img className="w-full " src="./avataForm.svg" alt="" />
                 </div>
-                <div className="form  ">
+                <div className="forms  ">
                     <img
                         src="./logo-ntechs.png"
                         alt=""
