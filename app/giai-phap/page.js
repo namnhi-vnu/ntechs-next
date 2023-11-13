@@ -13,7 +13,7 @@ import Link from "next/link";
 import { useStore } from "../store/hooks/useStore";
 import Image from "next/image";
 
-const typing = [
+const typings = [
     "Giải Pháp Thông Minh Của NTechs",
     2000,
     "Nâng Tầm Doanh Nghiệp Của Bạn",
@@ -30,7 +30,7 @@ const page = () => {
                     <div className="container mx-auto relative z-10 py-8 max-md:px-[0.5em]">
                         <h2 className="max-md:min-h-[72px]">
                             <TypingEffect
-                                typing={typing}
+                                typing={typings}
                                 style="text-center text-[2.5em] max-md:text-[1.5em] font-bold text-ntechs"
                             />
                         </h2>
